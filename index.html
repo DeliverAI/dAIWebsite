@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <!-- CSS Dependecies-->
+    <link rel="stylesheet" href="dependencies/bootstrapFull/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dependencies/animate.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400|Poppins:300,400" rel="stylesheet">
+
+    <!-- Javascript Dependencies-->
+    <script type="text/javascript" src="dependencies/bootstrapFull/js/tests/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="dependencies/jquery-ui.js"></script>
+    <script type="text/javascript" src="dependencies/bootstrapFull/dist/js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="images/icon.png">
+    <title>deliverAI</title>
+
+    <nav id="overallHeader" class="navbar navbar-fixed-top">
+           <div class="container-fluid">
+             <div class="navbar-header">
+              <div class="navbar-left">
+                <div class="navbar-header">
+                  <a href="#"><img src="images/herkathern.png" class="logo-dim"/></a>
+                </div>
+                <button class="navbar-toggle mobileMenu" data-toggle="collapse" data-target="#navBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              </div>
+
+            </div>
+              <div class="collapse navbar-collapse" id="navBar">
+                <div class="nav navbar-nav navbar-right">
+                     <li> <a id="navBarLink" class="navbar-links" href="#sectionAbout">About</a> </li>
+                     <li> <a id="navBarLink" class="navbar-links" href="#sectionProcess">Process</a> </li>
+                     <li> <a id="navBarLink" class="navbar-links" href="#sectionContact">Contact</a> </li>
+                </div>
+              </div>
+            </div>
+          </nav>
+  </head>
+  <body>
+    <div class="section landing-section">
+      <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+        <div class="video">Video</div>
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+           <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+           <li data-target="#homeCarousel" data-slide-to="1"></li>
+           <li data-target="#homeCarousel" data-slide-to="2"></li>
+           <li data-target="#homeCarousel" data-slide-to="3"></li>
+           <li data-target="#homeCarousel" data-slide-to="4"></li>
+         </ol>
+
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+           <div class="item active">
+             <img src="images/signUpBackground.png" class="home-background">
+           </div>
+
+           <!-- <div class="item">
+             Hey1
+           </div>
+
+           <div class="item">
+             Hey2
+           </div>
+
+           <div class="item">
+             Hey3
+           </div>
+
+           <div class="item ">
+             Hey4
+           </div> -->
+         </div>
+       </div>
+
+    </div>
+    <div class="section about-section" id="sectionAbout">
+
+    </div>
+    <div class="section odd process-section" id="sectionProcess">
+
+    </div>
+    <div class="section contact-section" id="sectionContact">
+      <div class="col-md-4">
+        <div class="contact contact-one"></div>
+        <div class="contact-title">
+          Soheil Hamidi
+        </div>
+        <div class="contact-blurb">
+          My name is blurb, I am a blurb for a living. Sometimes
+          I like to blurb, but most of the time I blurb. In the morning,
+          I wake up to the sweet smell of blurb. <br><br>I usually make some blurb
+          for breakfast, but if I'm feeling adventurous I make blurb. I usually
+          follow breakfast with a light blurb.<br><br>
+          <div class="col-md-4"><img src="images/github.png" class="iconSizeB"></img></div>
+          <div class="col-md-4"><img src="images/website.png" class="iconSize"></img></div>
+          <div class="col-md-4"><img src="images/linkedin.png" class="iconSize"></img></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact contact-two"></div>
+        <div class="contact-title">
+          Jonah Chin
+        </div>
+        <div class="contact-blurb">
+          My name is blurb, I am a blurb for a living. Sometimes
+          I like to blurb, but most of the time I blurb. In the morning,
+          I wake up to the sweet smell of blurb. <br><br>I usually make some blurb
+          for breakfast, but if I'm feeling adventurous I make blurb. I usually
+          follow breakfast with a light blurb.<br><br>
+          <div class="col-md-4"><img src="images/github.png" class="iconSizeB"></img></div>
+          <div class="col-md-4"><img src="images/website.png" class="iconSize"></img></div>
+          <div class="col-md-4"><img src="images/linkedin.png" class="iconSize"></img></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact contact-three"></div>
+        <div class="contact-title">
+          Michael Lam
+        </div>
+        <div class="contact-blurb">
+          My name is blurb, I am a blurb for a living. Sometimes
+          I like to blurb, but most of the time I blurb. In the morning,
+          I wake up to the sweet smell of blurb. <br><br>I usually make some blurb
+          for breakfast, but if I'm feeling adventurous I make blurb. I usually
+          follow breakfast with a light blurb.<br><br>
+          <div class="col-md-4"><img src="images/github.png" class="iconSizeB"></img></div>
+          <div class="col-md-4"><img src="images/website.png" class="iconSize"></img></div>
+          <div class="col-md-4"><img src="images/linkedin.png" class="iconSize"></img></div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+  $(window).scroll(function() {
+      if ($(document).scrollTop() > 150){
+        $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
+      } else if ($(document).scrollTop() < 150){
+        $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
+      }
+    });
+
+    $('[href*="#section"]').click(function(){
+        $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top
+        }, 1000); //Integer value = scroll speed (high is slow)
+        return false;
+      });
+
+  </script>
+</html>
